@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Atividade CAP 5 - Login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <title>EcoMerc</title>
+</head>
+<body>
+    <header id="nav">
+        <h1>EcoMerc</h1>
+        <img class="nav-logo" src="Atividade CAP 5 - Login.png" alt="">
+        <div class="nav-button">
+            <a href="#"><i id="pesquisa" class="bi bi-search"></i></a>
+            <a href="#" id="button">Cadastre-se</a>
+            <a href="#" id="button">Entrar</a>
+        </div>
+        <div class="menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+
+    <main id="main-page">
+        <form id="formulario">
+            <h2>Login</h2>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" autocomplete="off" placeholder="Digite seu e-mail">
+            <label for="password">Senha</label>
+            <input type="password" name="password" id="password" placeholder="Insira sua senha">
+            <a href="#" id="forgot-pass">Esqueceu a senha?</a>
+            <label for="submit"></label>
+            <input type="submit" name="btn-primary" id="btn-primary" value="Entrar">
+        </form>
+
+        <div id="socials">
+            <p>Se preferir, entre com uma rede social:</p>
+            <a id="social-container" href="#"><i class="bi bi-instagram"></i></a>
+            <a id="social-container" href="#"><i class="bi bi-twitter"></i></a>
+            <a id="social-container" href="#"><i class="bi bi-facebook"></i></a>
+        </div>
+
+        <div id="cadastrar">
+            <p>Não possui uma conta?</p>
+            <a href="#">Cadastre-se</a>
+        </div>
+    </main>
+    <script src="Atividade CAP 5 - Login.js"></script> 
+</body>
+</html>    

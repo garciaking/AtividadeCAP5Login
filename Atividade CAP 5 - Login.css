@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,212,255,1) 100%);
+}
+
+/*--    Cabeçalho   --*/
+
+
+#nav .nav-logo {
+    width: 60px;
+}
+
+#nav {
+    padding: 0.6rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    box-shadow: 0 0.1rem 0.5rem rgb(185, 185, 185);
+    width: 100%;
+}
+
+h1 , h2{
+    font-weight: 800;
+    font-size: 3rem;
+    color: #00D4FF;
+    text-shadow: #000 -1px -1px 4px;
+}
+
+#pesquisa {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: black;
+}
+
+.nav-button {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+#button {
+    color: white;
+    border: none;
+    background-color: rgba(0, 0, 0, .6);
+    padding: .8rem;
+    border-radius: 20px;
+    box-shadow: 0 0.1rem 0.5rem black;
+}
+
+#button:hover {
+    color: black;
+    background-color: #fff;
+    transition: 0.5s ease;
+    box-shadow: 0 0.1rem 0.5rem grey;
+}
+
+.menu {
+    cursor: pointer;
+    display: none;
+}
+
+.menu .bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background: black;
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+
+.menu .bar:nth-child(2) {
+    background-color: rgb(165, 165, 165);
+}
+
+#main-page {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 380px;
+    padding: 20px 30px;
+    border-radius: 15px;
+    margin-top: 10vh;
+    text-align: center;
+}
+
+#formulario > h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+#formulario {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+label, input {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+    border: none;
+}
+
+label {
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 20px 0;
+}
+
+input {
+    border-bottom: 1px solid black;
+    padding: 8px;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+input:focus {
+    outline: none;
+}
+
+#forgot-pass {
+    display: block;
+    text-align: right;
+    font-size: 0.9rem;
+}
+
+#btn-primary {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 60%;
+    margin: 20px auto;
+    border: none;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+#btn-primary:hover {
+    color: black;
+    background-color: #00D4FF;
+    transition: 0.5s ease;
+    box-shadow: 0 0.1rem 0.5rem black
+}
+
+#socials, #socials p {
+    margin-bottom: 10px;
+}
+
+#social-container {
+    font-size: 2rem;
+    gap: 10px;
+    color: black;
+    margin: 0 8px;
+}
+
+#cadastrar {
+    margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 550px){
+
+    #main-page {
+        margin-top: 18vh;
+    }
+
+    #nav {
+        position: fixed;
+        top: 0;
+        background-color: rgba(165, 165, 165, .8);
+    }
+
+    h1 {
+        display: none;
+    }
+
+    .nav-button {
+        position: fixed;
+        right: -100%;
+        top: 79px;
+        width: 50%;
+        height: 100%;
+        flex-direction: column;
+        background-color: rgba(165, 165, 165, .8);
+        gap: -10px;
+        transition: 0.3s;
+    }
+
+    #pesquisa {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+
+    }
+
+    .nav-button.ativo {
+        right: 0;
+    }
+
+    #button {
+        margin-top: 16px;
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        box-shadow: 0 0.1rem 0.5rem #00D4FF;
+        width: 80%;
+    }
+
+    #button:hover {
+        background-color: #00D4FF;
+        color: #000;
+        box-shadow: 0 0.1rem 0.5rem black;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .menu.ativo .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .menu.ativo .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menu.ativo .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
